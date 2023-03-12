@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_HTML_CSS</title>
+    <style>
+        body {
+            background-image: url(bg2.webp);
+            background-size: cover;
+        }
+
+        .navbar {
+            /* margin-top:px; */
+            padding: 0px;
+            margin-left: 116px;
+            height: 40px;
+            width: 100vw;
+            /* border:2px solid rgb(220, 245, 245); */
+            /* border-left:0px; */
+            background-color: rgb(18, 137, 141);
+            box-shadow: 2px 2px 5px 1px gray;
+            position: sticky;
+            display: flex;
+            animation-name: nav;
+            animation-iteration-count: infinite;
+            animation-duration: 1.5s;
+            position: absolute;
+        }
+
+        @keyframes nav {
+            0% {}
+
+            25% {
+                border-right: 1px solid white;
+            }
+
+            50% {
+                border-bottom: 1px solid white;
+                
+            }
+
+            75% {
+                border-left: 1px solid white;
+            }
+
+            100% {
+                border-top: 1px solid white;
+                
+            }
+        }
+
+        img {
+            height: 110px;
+            width: 110px;
+            padding: 0;
+            margin: 0;
+            float: left;
+            box-shadow: 2px 2px 5px 1px gray;
+
+        }
+
+        .home {
+            color: antiquewhite;
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+
+        .home:hover {
+            color: black;
+
+        }
+
+        .login {
+            color: antiquewhite;
+            margin-left: 2%;
+            margin-top: 10px;
+        }
+
+        .login:hover {
+            color: black;
+
+        }
+
+        .about {
+            color: antiquewhite;
+            margin-left: 2%;
+            margin-top: 10px;
+        }
+
+        .about:hover {
+            color: black;
+
+        }
+
+        .contact {
+            color: antiquewhite;
+            margin-left: 2%;
+            margin-top: 10px;
+        }
+
+        .contact:hover {
+            color: black;
+
+        }
+
+        .registration {
+            margin: auto;
+            position: absolute;
+            margin-top: 95px;
+            margin-left: 70vw;
+            height: 300px;
+            width: 290px;
+            background-color: rgba(219, 121, 30, 0.664);
+            box-shadow: 3px 3px 7px 4px rgb(104, 98, 98);
+            position: absolute;
+            animation-name: reg;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            padding-top: 95px;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(11, 9, 12);
+
+
+
+        }
+
+        .registration:hover {
+            background-color: rgba(29, 57, 180, 0.651);
+            box-shadow: 3px 3px 7px 10px rgb(104, 98, 98);
+            color: bisque;
+
+        }
+
+
+        .email {
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .password {
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .button {
+            /* box-shadow: 2px 2px 2px 2px black; */
+            background: #490b44f6;
+        }
+
+        button {
+            background-color: rgb(151, 97, 138);
+        }
+
+        .subcontant {
+            height: 80px;
+            width: 794px;
+            margin-left: 40px;
+            position: absolute;
+            margin-top: 410px;
+            /* border:2px solid rgb(82, 76, 76); */
+        }
+
+        .subc1 {
+            margin-right: 6px;
+            width: 150px;
+            float: left;
+            text-align: center;
+            padding-top: 30px;
+            height: 50px;
+            /* border:2px solid red; */
+            color: aliceblue;
+            background-color: rgba(223, 198, 60, 0.438);
+            box-shadow: 1px 1px 2px 1px rgba(233, 166, 166, 0.849);
+
+        }
+
+        .subc1:hover {
+            margin-right: 8px;
+            height: 52px;
+            background-color: rgba(49, 235, 173, 0.336);
+            box-shadow: 2px 2px 5px 2px rgba(199, 116, 116, 0.849);
+
+        }
+
+        .subc2 {
+            margin-right: 6px;
+            color: aliceblue;
+            background-color: rgba(223, 198, 60, 0.438);
+            box-shadow: 1px 1px 2px 1px rgba(233, 166, 166, 0.849);
+            width: 116px;
+            padding-left: 34px;
+            float: left;
+            padding-top: 30px;
+            height: 50px;
+            /* border:2px solid red; */
+        }
+
+        .subc2:hover {
+            margin-right: 8px;
+            height: 52px;
+            background-color: rgba(49, 235, 173, 0.336);
+            box-shadow: 2px 2px 5px 2px rgba(199, 116, 116, 0.849);
+
+        }
+
+        .subc3 {
+            width: 140px;
+            padding-left: 10px;
+            margin-right: 6px;
+            color: aliceblue;
+            background-color: rgba(223, 198, 60, 0.438);
+            box-shadow: 1px 1px 2px 1px rgba(233, 166, 166, 0.849);
+            float: left;
+            padding-top: 30px;
+            height: 50px;
+            /* border:2px solid red; */
+        }
+
+        .subc3:hover {
+            margin-right: 8px;
+            height: 52px;
+            background-color: rgba(49, 235, 173, 0.336);
+            box-shadow: 2px 2px 5px 2px rgba(199, 116, 116, 0.849);
+
+        }
+
+        .subc4 {
+            width: 140px;
+            padding-left: 10px;
+            margin-right: 6px;
+            color: aliceblue;
+            background-color: rgba(223, 198, 60, 0.438);
+            box-shadow: 1px 1px 2px 1px rgba(233, 166, 166, 0.849);
+            float: left;
+            padding-top: 30px;
+            height: 50px;
+            /* border:2px solid red; */
+        }
+
+        .subc4:hover {
+            margin-right: 8px;
+            height: 52px;
+            background-color: rgba(49, 235, 173, 0.336);
+            box-shadow: 2px 2px 5px 2px rgba(199, 116, 116, 0.849);
+
+        }
+
+        .subc5 {
+            width: 150px;
+            margin-right: 6px;
+            color: aliceblue;
+            background-color: rgba(223, 198, 60, 0.438);
+            box-shadow: 1px 1px 2px 1px rgba(233, 166, 166, 0.849);
+            float: left;
+            padding-top: 30px;
+            height: 50px;
+            /* border:2px solid red; */
+        }
+
+        .subc5:hover {
+            margin-right: 8px;
+            height: 52px;
+            background-color: rgba(49, 235, 173, 0.336);
+            box-shadow: 2px 2px 5px 2px rgba(199, 116, 116, 0.849);
+
+        }
+
+        .subimg {
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 200px;
+            font-size: 50px;
+            background-image: url(subimg.jpg);
+            background-size: cover;
+            max-height: 900px;
+            max-width: 500px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-shadow: 2px 2px 4px white;
+            border: 2px solid black;
+            animation-name: img;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes img {
+            0% {
+                margin-left: 30px;
+            }
+
+            50% {
+                margin-left: 300px;
+                background-image: url(wp2141407.webp);
+                background-size: cover;
+            }
+
+            100% {
+                margin-left: 30px;
+            }
+
+        }
+
+        /* .subimg:hover {
+            background-image: url(wp2141407.webp);
+            background-size: cover;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="dot">
+            <img src="logo.webp" alt="LOGO">
+        </div>
+    </div>
+    <nav>
+        <div class="navbar">
+            <div class="home">HOME</div>
+            <div class="about">ABOUT</div>
+            <div class="login">LOGIN</div>
+            <div class="contact">CONTACT</div>
+
+        </div>
+    </nav>
+    <div class="subimg">WELCOME TO STUDENT HUB</div>
+    <article>
+        <div class="subcontant">
+            <div class="subc1">SELL BOOKS</div>
+            <div class="subc2">EXPLORE CAREERS</div>
+            <div class="subc3">24/7 STUDY HELP</div>
+            <div class="subc4">RETURN BOOKS</div>
+            <div class="subc5">FIND INTERNSHIPS</div>
+
+        </div>
+    </article>
+    <saction>
+        <div class="registration">
+            <span>LOGIN ID</span>
+            <br><br>
+            <span>Email Id</span><br>
+            <input type="email" class="email" name="email" value="">
+            <br> <br>
+            <span>Password</span><br>
+            <input type="password" class="password" name="password" value="">
+            <br><br>
+            <button>
+                <input type="button" class="button" name="button" value="login">
+            </button>
+
+        </div>
+    </saction>
+</body>
+
+</html>
